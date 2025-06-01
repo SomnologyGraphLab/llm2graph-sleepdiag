@@ -1,0 +1,382 @@
+/* 文件表格基础样式 */
+.filetable {
+  /* width: calc(-360px + 100dvw); */
+  height: calc(-400px + 100dvh); /* 动态视口高度减去400px */
+  border: 1px solid #d1d5db; /* 浅灰色边框 */
+}
+
+/* 带扩展面板的文件表格样式 */
+.fileTableWithExpansion {
+  width: calc(-640px + 100dvw) !important; /* 动态视口宽度减去640px */
+  height: calc(-400px + 100dvh);
+  border: 1px solid #d1d5db;
+}
+
+/* 带两侧抽屉的文件表格样式 */
+.fileTableWithBothDrawers {
+  width: calc(-650px + 100dvw) !important;
+  height: calc(-400px + 100dvh);
+  border: 1px solid #d1d5db;
+}
+
+/* 扩展面板中的表格样式 */
+.fileTableWithExpansion .ndl-div-table {
+  width: max-content !important; /* 根据内容自适应宽度 */
+}
+
+/* 基础表格样式 */
+.filetable .ndl-div-table {
+  width: max-content !important;
+}
+
+/* 带扩展面板的内容区域样式 */
+.contentWithExpansion {
+  width: calc(-840px + 100dvw);
+  height: calc(100dvh - 58px);
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+/* 带单个扩展面板的内容区域样式 */
+.contentWithOneExpansion {
+  width: calc(-550px + 100dvw);
+  height: calc(100dvh - 58px);
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+/* 带两侧抽屉的内容区域样式 */
+.contentWithBothDrawers {
+  width: calc(-786px + 100dvw);
+  height: calc(100dvh - 58px);
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+/* 带文件上传扩展的内容区域样式 */
+.contentWithDropzoneExpansion {
+  width: calc(100% - 422px);
+  height: calc(100dvh - 58px);
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+/* S3容器样式 */
+.s3Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  outline-color: #d1d5db;
+}
+
+/* S3容器按钮样式 */
+.s3Container>button>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 图片背景样式 */
+.imageBg {
+  outline-color: #d1d5db;
+  border-radius: 8px;
+}
+
+/* 数据网格导航样式 */
+.ndl-data-grid-root .ndl-data-grid-navigation {
+  padding-block: 5px !important;
+}
+
+/* 抽屉关闭按钮样式 */
+.ndl-drawer .ndl-drawer-close-button {
+  background-color: rgb(var(--theme-palette-neutral-bg-strong));
+  width: 36px !important;
+  height: 36px !important;
+}
+
+/* 自定义按钮样式 */
+.custombutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+/* 品牌图片样式 */
+.brandimg {
+  width: 65px;
+  height: 55px;
+  object-fit: contain;
+}
+
+/* 网页图片样式 */
+.webImg {
+  width: 80px;
+  height: 80px;
+}
+
+/* 占位符文本样式 */
+::placeholder {
+  color: rgb(135, 130, 130) !important;
+}
+
+/* 文本省略样式 */
+.textellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 加载动画样式 */
+.loader {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: block;
+  margin: 7px auto;
+  position: relative;
+  background: #FFF;
+  box-shadow: -12px 0 #FFF, 12px 0 #FFF;
+  box-sizing: border-box;
+  animation: shadowPulse 2s linear infinite;
+}
+
+/* 加载动画关键帧 */
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -12px 0 rgb(var(--theme-palette-primary-bg-strong)), 12px 0 #FFF;
+  }
+
+  66% {
+    background: rgb(var(--theme-palette-primary-bg-strong));
+    box-shadow: -12px 0 #FFF, 12px 0 #FFF;
+  }
+
+  100% {
+    background: #FFF;
+    box-shadow: -12px 0 #FFF, 12px 0 rgb(var(--theme-palette-primary-bg-strong));
+  }
+}
+
+/* 文件上传区域样式 */
+.ndl-dropzone>div {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* 连接模态框输入框样式 */
+.connectionmodal__input {
+  width: 48.5%;
+  margin-right: 1.5%;
+  display: inline-block;
+}
+
+/* 连接模态框端口输入框样式 */
+.connectionmodal__port__input {
+  width: 15%;
+  display: inline-block;
+}
+
+/* 连接模态框主机名输入框样式 */
+.connectionmodal__hostname__input {
+  margin-left: 2.5%;
+  width: 55%;
+  margin-right: 2.5%;
+  display: inline-block;
+}
+
+/* 连接模态框协议输入框样式 */
+.connectionmodal__protocal__input {
+  width: 25%;
+  display: inline-block
+}
+
+/* 连接状态容器样式 */
+.connectionstatus__container {
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* 图例容器样式 */
+.legend_div {
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 15px;
+  background-color: rgb(var(--theme-palette-neutral-bg-weak));
+  scrollbar-width: thin;
+  max-height: 100%;
+  overflow-y: auto;
+  height: 100%;
+  z-index: 1;
+  box-shadow: -2px 0px 6px rgb(var(--theme-palette-neutral-bg-strong));
+}
+
+/* 图例样式 */
+.legend {
+  display: inline-block;
+  min-width: 0px;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 5px 8px;
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  width: max-content;
+  height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* 组件内容样式 */
+.ndl-widget-content>div {
+  overflow-wrap: break-word
+}
+
+/* 文本换行样式 */
+.word-break {
+  word-break: break-word;
+}
+
+/* 单元格样式 */
+.cellClass {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* 复选框和标签样式 */
+.ndl-type-checkbox,
+.ndl-label-before>span {
+  font-weight: 600;
+  font-size: larger;
+}
+
+/* 上传图片包装器样式 */
+.ndl-upload-img-wrapper {
+  background: url("./assets/images/dropzone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 文件上传区域头部样式 */
+.ndl-dropzone .ndl-dropzone-header {
+  row-gap: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 状态指示器样式 */
+.ndl-status-indicator {
+  margin-bottom: 0px !important;
+}
+
+/* 列表样式 */
+.css-h4y409-MuiList-root {
+  scrollbar-width: thin;
+}
+
+/* 源容器样式 */
+.source-container {
+  container-type: size;
+}
+
+/* 源容器子元素样式 */
+.source-container>* {
+  width: 100%;
+}
+
+/* 响应式布局：中等高度屏幕 */
+@container (min-height:500px) and (max-height:700px) {
+  .outline-dashed img {
+    width: 40px;
+    height: auto;
+  }
+
+  .outline-dashed h6 {
+    font-size: 14px;
+  }
+
+  .outline-dashed .wikipedia-div {
+    padding: 12px;
+  }
+}
+
+/* 响应式布局：较小高度屏幕 */
+@container (min-height:400px) and (max-height:500px) {
+  .outline-dashed img {
+    width: 35px;
+    height: auto;
+  }
+
+  .outline-dashed h6 {
+    font-size: 14px;
+  }
+
+  .outline-dashed .wikipedia-div {
+    padding: 10px;
+  }
+}
+
+/* 响应式布局：最小高度屏幕 */
+@container (max-height:300px) {
+  .outline-dashed img {
+    width: 30px;
+    height: auto;
+  }
+
+  .outline-dashed h6 {
+    font-size: 12px;
+  }
+
+  .dropzoneContainer .ndl-upload-img-wrapper {
+    display: none !important;
+  }
+
+  .dropzoneContainer .ndl-dropzone-header {
+    margin-bottom: 5px !important;
+  }
+
+  .imageBg>div {
+    padding: 5px;
+  }
+
+  .outline-dashed .wikipedia-div {
+    padding: 8px;
+  }
+}
+
+.node_label__value-container--has-value {
+  max-height: 215px;
+  overflow-y: scroll !important;
+  scrollbar-width: thin;
+}
+
+.relationship_label__value-container--has-value {
+  max-height: 215px;
+  overflow-y: scroll !important;
+  scrollbar-width: thin
+}
